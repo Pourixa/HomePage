@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header::before
+{
+    position: absolute;
+    content: "";
+    border-left: 100vw solid red;
+    border-bottom: 33vh solid transparent;
+    height: 0;
+    
+
+    z-index: -1;
+
+}
+header
+{
+
+}
