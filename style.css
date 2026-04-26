@@ -1,24 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *
 {
     margin: 0;
     padding: 0;
+    font-family: roboto;
 }
 
-header::before
+
+body
 {
-    position: absolute;
-    content: "";
-    border-left: 100vw solid red;
-    border-bottom: 33vh solid transparent;
-    height: 0;
-    
-
-    z-index: -1;
-
+    display: grid;
+    overflow-x: hidden;
 }
-header
-{
 
+.headerLayOut{
+        position: absolute;
+        content: "";
+        border-left: 175vw solid rgb(35, 156, 184);
+        border-bottom: 50vh solid transparent;
+        z-index: -1;
+        filter:drop-shadow(0 5px 5px rgba(0,0,0,0.3))
+}
+
+.topPhoto
+{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "Playwrite DE SAS";
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    min-width: 250px;
+    min-height: 312px;
+    margin: 1em;
+    background-image: url("pexels-quiltro-4044071.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.362);
+}
+
+.aboutMe
+{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe > h1 
+{
+    font-family: "Playwrite DE SAS";
+    margin-bottom: 1em;
+}
+
+.aboutMe > p 
+{
+    margin-bottom: 1em;
+}
+
+.headerIcons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 1em;
+}
+
+.headerIcons > i
+{
+    margin-left: 1em;
+    font-size: 2em;
 }
