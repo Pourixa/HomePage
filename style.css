@@ -143,3 +143,66 @@ article
     margin: 1em;
 }
 
+footer>address
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 156, 184);
+}
+
+footer>address> h1
+{
+    display: flex;
+    justify-content: center;
+    font-family: "Playwrite DE SAS";
+    margin: 1em;
+    margin-bottom: 0.5em;
+}
+footer > address > h3
+{
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+footer > address > p
+{
+
+    margin: 0.5em;
+    margin-top: 1em;
+
+}
+
+.telephone
+{
+        margin-left: .5em;
+    margin-right: .5em;
+}
+
+.telephone > svg
+{
+    max-width: 0;
+    max-height: 0
+} 
+
+.email
+{
+        margin-left: .5em;
+    margin-right: .5em;
+
+}
+
+.email > svg 
+{
+    max-width: 0;
+    max-height: 0;
+}
+
+footer > img
+{
+max-width: 100vw;
+object-position: center;
+object-fit: cover;
+margin-bottom: 0;
+}
+
