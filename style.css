@@ -6,12 +6,18 @@
     font-family: roboto;
 }
 
+html
+{
+    overflow-x: hidden;
+}
 
 body
 {
     display: grid;
+    background-color: wheat;
     overflow-x: hidden;
 }
+
 
 .headerLayOut{
         position: absolute;
@@ -75,9 +81,13 @@ body
 }
 
 main {
+    background-color: wheat;
     display:grid;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
+    padding:1em;
+    gap: 2em;
 }
 
 main > h1 {
@@ -90,15 +100,21 @@ article
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: white;
+
 
 }
 
-article > img 
+article > picture  
 {
-max-width: 100%;
-text-align: center;
-object-fit: cover;
-margin: 0 auto;
+    align-self: baseline;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
@@ -120,8 +136,6 @@ article > section {
     justify-content: space-between;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    margin-top: 1em;
-
 }
 
 article >section > div {
@@ -135,14 +149,15 @@ article >section > div {
 article > p {
     padding-left: 1em;
     padding-right: 1em;
-    margin-top: 1em;
     margin-bottom: 1em;
 }
 
 article
 {
+    display: grid;
     box-shadow:8px 8px 10px rgba(0, 0, 0, 0.241);
-    margin: 1em;
+    margin: 2em;
+    min-height: 100%;
 }
 
 footer>address
@@ -263,5 +278,16 @@ margin-bottom: 0;
 {
     justify-content: right;
     padding-right: 2em;
+}
+main{
+    grid-template-columns: 1fr 1fr;
+}
+main>h1
+{
+    grid-column: 1/3;
+}
+
+article > img 
+{
 }
 }
