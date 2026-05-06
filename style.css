@@ -287,7 +287,55 @@ main>h1
     grid-column: 1/3;
 }
 
-article > img 
+footer
 {
+    display: flex;
+    background-color:  rgb(35, 156, 184);
+    justify-content: space-around;
 }
+footer > img
+{
+    max-width: 250px;
+    max-height: 85%;
+    text-align: center;
+    margin: auto 0;
+object-position: center;
+object-fit: cover;
+}
+address
+{
+    max-width: 400px;
+}
+.footerIcons
+{
+    justify-content: start;
+    margin-left: 0.5em;
+}
+
+.telephone
+{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.telephone > svg
+{
+    max-width: 32px;
+    max-height: 32px
+} 
+
+.email
+{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.email > svg 
+{
+    max-width: 32px;
+    max-height: 32px
+    ;
+}   
 }
