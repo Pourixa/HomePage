@@ -366,9 +366,11 @@ address
     main
     {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100vw;
     }
     main > h1
     {
         grid-column: 1/4;
     }
+
 }
