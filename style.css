@@ -74,6 +74,14 @@ body
     margin-bottom: 1em;
 }
 
+.headerIcons > i:hover
+{
+    transform: perspective(1em) translate3d(0,-3px,5px) rotate3d(0.5turn , 0 ,0);
+
+}
+
+
+
 .headerIcons > i
 {
     margin-left: 1em;
@@ -101,8 +109,12 @@ article
     justify-content: center;
     align-items: center;
     background-color: white;
+    transition: transform .5s ease ;
+}
 
-
+article:hover
+{
+transform: translate(0,-10px);
 }
 
 article > picture  
@@ -373,4 +385,22 @@ address
         grid-column: 1/4;
     }
 
+    footer
+{
+    justify-content: space-between;
+    padding: 3em;
+}
+    address
+{
+    font-size: x-large;
+}
+    footer > img
+{
+    min-width: 500px;
+    min-width: 500px;
+    text-align: center;
+    margin: auto 0;
+    object-position: center;
+    object-fit: cover;
+}
 }
