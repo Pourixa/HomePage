@@ -335,7 +335,40 @@ address
 .email > svg 
 {
     max-width: 32px;
-    max-height: 32px
-    ;
+    max-height: 32px;
 }   
+}
+@media (min-width:1024px) {
+    header
+    {
+        display: flex;
+    }
+    .aboutMe
+    {
+        margin-left: 0.5em;
+        padding: 2em;
+
+    }
+    .topPhoto
+    {
+        margin-top: 2em;
+    position: relative;
+    display: flex;
+       left:2em;
+       justify-content: center;
+    
+       align-items: last baseline;
+    }
+    .topPhoto>span
+    {
+        transform: none;
+    }
+    main
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main > h1
+    {
+        grid-column: 1/4;
+    }
 }
