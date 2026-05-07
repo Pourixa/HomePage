@@ -20,12 +20,22 @@ body
 
 
 .headerLayOut{
+        background-color: rgb(35, 156, 184);
+        clip-path: polygon(100% 0%, 100% 22%, 0% 60%, 0% 0%);
+        min-width: 100vw;
+        min-height: 100%;
         position: absolute;
-        content: "";
-        border-left: 175vw solid rgb(35, 156, 184);
-        border-bottom: 50vh solid transparent;
+
+}
+body > span:first-of-type
+{        min-width: 100vw;
+        min-height: 100%;
         z-index: -1;
-        filter:drop-shadow(0 5px 5px rgba(0,0,0,0.3))
+        position: absolute;
+        filter:drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+        margin: 0;
+        padding: 0;
+
 }
 
 .topPhoto
